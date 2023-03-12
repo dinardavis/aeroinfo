@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  padding: 1rem;
 }
 
 .main-header {
@@ -22,6 +22,32 @@
 
 .main-logo {
   width: 15rem;
+}
+
+.home-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.home-nav {
+  padding: 1rem;
+}
+
+.home-nav a {
+  padding: .5rem 1rem;
+  margin: 1rem;
+  background-color: blue;
+  color: #fff;
+  border-radius: 1rem;
+}
+
+.home-content {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .footer {
