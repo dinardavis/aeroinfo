@@ -46,8 +46,23 @@
 
 .home-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
+  padding: 2rem;
+}
+
+.section-header {
+  margin-bottom: 1.5rem;
+}
+
+.frequently-viewed {
+  width: 50%;
+  height: 90vh;
+}
+
+.frequently-viewed img {
+  width: 100%;
+  margin: 1rem 0;
 }
 
 .footer {

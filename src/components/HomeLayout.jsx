@@ -1,6 +1,6 @@
 
 import { Link, Outlet } from "react-router-dom"
-import FrequentlyViewed from "../pages/FrequentlyViewed"
+import FrequentlyViewed from "./FrequentlyViewed"
 
 export default function HomeLayout() {
 
