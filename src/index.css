@@ -36,6 +36,10 @@ body {
   border-radius: 2rem;
 }
 
+.main-nav a:hover {
+  cursor: pointer;
+}
+
 .main-logo {
   width: 15rem;
 }
@@ -66,6 +70,20 @@ body {
   background-color: #f9d44a;
   font-weight: 500;
   border-radius: 1rem;
+}
+
+.home-nav a:hover {
+  background-color: #304552;
+  color: #f9d44a;
+}
+
+.home-nav .active-region {
+  background-color: #304552;
+  color: #f9d44a;
+}
+
+.home-nav a:hover {
+  cursor: pointer;
 }
 
 .home-content {
