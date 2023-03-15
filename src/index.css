@@ -98,13 +98,25 @@ body {
 }
 
 .frequently-viewed {
-  width: 50%;
+  width: 48%;
   height: 90vh;
 }
 
 .frequently-viewed img {
   width: 100%;
   margin: 1rem 0;
+}
+
+.search-results {
+  width: 48%;
+}
+
+.search-result-card {
+  width: 100%;
+  background-color: #f2f8fe;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 1rem;
 }
 
 .footer {

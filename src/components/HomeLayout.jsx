@@ -60,7 +60,9 @@ export default function HomeLayout() {
       </nav>
       <div className="home-content">
         <FrequentlyViewed /> 
-        <Outlet />
+        <div className="search-results">
+          <Outlet />
+        </div>
       </div>
     </section>
   )
