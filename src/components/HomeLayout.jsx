@@ -1,6 +1,6 @@
 
 import { NavLink, Outlet } from "react-router-dom"
-import FrequentlyViewed from "./FrequentlyViewed"
+
 
 export default function HomeLayout() {
 
@@ -59,10 +59,7 @@ export default function HomeLayout() {
           
       </nav>
       <div className="home-content">
-        <FrequentlyViewed /> 
-        <div className="search-results">
-          <Outlet />
-        </div>
+        <Outlet />
       </div>
     </section>
   )

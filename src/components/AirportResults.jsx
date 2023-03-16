@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function AirportResults() {
 
@@ -106,9 +107,9 @@ export default function AirportResults() {
 
   ]
 
-  const airportResults = airportData.map((airport) => {
+  const airportResults = airportData.map((airport, index) => {
     return (
-      <div className="search-result-card">
+      <div key={index} className="search-result-card">
         <h1>{`${airport.name} (${airport.code})`}</h1>
         <h2>{`${airport.city}, ${airport.state}`}</h2>
         <h2>{`${airport.country}`}</h2>

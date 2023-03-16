@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
-import Home from "./components/HomeLayout";
+import HomeLayout from "./components/HomeLayout";
 import LogIn from "./pages/LogIn";
 import SignUp from "./pages/SignUp";
 import Global from "./pages/map-regions/Global";
@@ -10,7 +10,7 @@ import Europe from "./pages/map-regions/Europe";
 import AsiaPacific from "./pages/map-regions/AsiaPacific";
 import MiddleEast from "./pages/map-regions/MiddleEast";
 import Africa from "./pages/map-regions/Africa";
-
+import AirportDetail from "./components/AirportDetail";
 
 
 
@@ -19,17 +19,19 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route path="home" element={<Home />}>
+          <Route path="home" element={<HomeLayout />}>
             <Route index element={<Global />} />
-            <Route path="north-america" element={<NorthAmerica />} />
+            {/* <Route path="north-america" element={<NorthAmerica />} />
             <Route path="central-south-america" element={<CentralSouthAmerica />} />
             <Route path="europe" element={<Europe />} />
             <Route path="asia-pacific" element={<AsiaPacific />} />
             <Route path="middle-east" element={<MiddleEast />} />
-            <Route path="africa" element={<Africa />} /> 
+            <Route path="africa" element={<Africa />} />  */}
+            <Route path=":airportCode" element={<AirportDetail />} />
           </Route>
           <Route path="login" element={<LogIn />} />
           <Route path="signup" element={<SignUp />} />
+
         </Route>
       </Routes>
     </BrowserRouter>
