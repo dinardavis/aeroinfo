@@ -6,13 +6,6 @@ export default function Global(props) {
 
   const [data, setData] = React.useState({});
 
-  React.useEffect(() => {
-    fetch("/api")
-      .then(res => res.json())
-      .then(data => setData(data))
-  }, [])
-
-  console.log(data.message)
 
   return (
     <div>
@@ -20,7 +13,6 @@ export default function Global(props) {
         <FrequentlyViewed /> 
         <div className="search-results">
           <h1>Global Search Results</h1>
-          <h1>{!data ? "Loading..." : data.message}</h1>
           <AirportResults />
         </div>
       </div>
