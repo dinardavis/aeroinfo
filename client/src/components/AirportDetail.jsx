@@ -3,11 +3,10 @@ import { useParams } from "react-router-dom";
 
 export default function AirportDetail() {
 
-  const params = useParams();
+  const { airportCode } = useParams();
 
-  console.log(params)
 
   return (
-    <h1>Airport Detail Page</h1>
+    <h1>Airport Name - ({airportCode.toUpperCase()})</h1>
   )
 }

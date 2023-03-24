@@ -1,11 +1,8 @@
 import React from "react";
-import AirportResults from "../../components/AirportResults";
-import FrequentlyViewed from "../../components/FrequentlyViewed";
+import FrequentlyViewed from "./FrequentlyViewed";
+import AirportResults from "../components/AirportResults";
 
-export default function Global(props) {
-
-  const [data, setData] = React.useState({});
-
+export default function DefaultSearch(props) {
 
   return (
     <div>

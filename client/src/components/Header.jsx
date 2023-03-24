@@ -6,7 +6,7 @@ export default function Header() {
 
   return (
     <header className="main-header">
-      <Link to="/home">
+      <Link to="/">
         <img className="main-logo" src="/imgs/aeroinfo_logo.png" alt="AeroInfo Logo"/>
       </Link>
       <input className="main-search-input" />
